@@ -88,6 +88,7 @@
             </h1>
         </div>
     </div>
+
     <div class="row">
         <div class="col-md-12">
             <p>这里提供一部分制作DIY卡可能使用的工具。可以点击下面的按钮来下载。</p>
@@ -124,6 +125,25 @@
                     <span class="glyphicon glyphicon-download-alt"></span> Git for Windows 64位
                 </a>
             </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title">DIY卡BGM
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>222服的部分DIY卡支持内置BGM。</p>
+            <p>使用<a href="https://github.com/purerosefallen/ygopro/" target="_blank">KoishiPro</a>的玩家，下载了上面的音乐包之后，在222服的部分DIY卡在特定情况下（如特殊召唤成功）会播放特定的BGM，给玩家更棒的决斗体验。</p>
+            <p>玩家也可以自己制作带有BGM的DIY卡。只需要把BGM放在<kbd>./sound/BGM/custom</kbd>文件夹下，并在卡片的lua脚本内特定时点的位置插入以下语句，即可播放BGM。</p>
+            <p><kbd>Duel.Hint(HINT_MUSIC,0,aux.Stringid(CARD_CODE,DESCRIPTION_INDEX))</kbd></p>
+            <p><kbd>aux.Stringid</kbd>为写有BGM文件名（无路径，无扩展名）的效果提示文字。</p>
+            <p>BGM支持<kbd>mp3</kbd>和<kbd>ogg</kbd>格式。若为<kbd>ogg</kbd>格式则需要把上述语句的<kbd>HINT_MUSIC</kbd>改为<kbd>HINT_MUSIC_OGG</kbd>。</p>
+            <p>222服同时也支持内置音效。音效文件需要是<kbd>wav</kbd>格式，只需放在<kbd>./sound/custom</kbd>并把上述语句的<kbd>HINT_MUSIC</kbd>改为<kbd>HINT_SOUND</kbd>即可。</p>
+            <p>在222服投稿带BGM或音效的卡时，请把对应的音乐资源文件一并附上。注意一期投稿的卡的音乐资源文件不要超过10MB。</p>
         </div>
     </div>
 
