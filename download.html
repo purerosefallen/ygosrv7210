@@ -68,7 +68,8 @@
                 <a class="btn btn-default btn-sm" href="/archive/NanahiraMobile-latest.apk" target="_blank">
                     <span class="glyphicon glyphicon-phone"></span> NanahiraMobile下载
                 </a>
-                <a class="btn btn-default btn-sm" href="itms-services://?action=download-manifest&url=https://koishi.moecube.com/koishipro2ios/app.plist" target="_blank">
+                <a class="btn btn-default btn-sm" href="itms-services://?action=download-manifest&url=https://koishi.moecube.com/koishipro2ios/app.plist" target="_blank"
+                    data-toggle="popover" data-placement="bottom" data-html="true" data-trigger="hover focus" title="iOS手机扫描二维码下载" data-content="<img src ='static/koishipro2-ios.gif' width='245' height='245'>">
                     <span class="glyphicon glyphicon-phone"></span> KoishiPro2 iOS下载
                 </a>
             </p>
@@ -166,5 +167,10 @@ var _hmt = _hmt || [];
 </script>
 <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover();
+})
+</script>
 </body>
 </html>
